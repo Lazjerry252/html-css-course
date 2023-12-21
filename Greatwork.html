@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      .first-div {
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+      }
+
+     .jerry-name {
+      color: blueviolet;
+      font-weight: bold;
+      font-size: 70px;
+      margin-top: 70px;
+      margin-bottom: 15px;
+      font-family: Arial;
+      }
+
+      .wellcome {
+        font-style: italic;
+        color: black;
+      }
+
+      .logo {
+        width: 50px;
+      }
+
+      .introduction {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin-top: 1px;
+      }
+
+      .free-code {
+        font-family: Arial;
+        color: rgb(112, 180, 202);
+        margin: 0, 2px;
+      }
+
+      .jr-header {
+        background-color: lightblue;
+        display: flex;
+        justify-content: space-between;
+        height: 55px;
+        position: fixed;
+        z-index: 100px;
+        top: 0;
+        right: 0;
+        left: 0;
+
+      }
+
+      .first-head {
+        width: 250px;
+        display: flex;
+        align-items: center;
+      }
+
+      .second-head {
+        margin: 0, 20px, 0, 40px;
+      }
+
+      .third-head {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .four-lines {
+        height: 35px;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+
+      .name {
+        font-size: 25px;
+        font-family: Arial;
+        color: blue;
+      }
+
+      .visit {
+        font-family: Arial;
+        font-size: 20px;
+        display: flex;
+      }
+
+      .icons {
+        height: 35px;
+      }
+
+      .upload,
+      .notifications,
+      .youtube-apps,
+      .explore,
+      .originals {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+      }
+
+      .upload .tooltip,
+      .explore .tooltip,
+      .notifications .tooltip,
+      .youtube-apps .tooltip,
+      .originals .tooltip {
+        position: absolute;
+        background-color: gray;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 2px;
+        font-size: 12px;
+        bottom: -30px;
+        opacity: 0;
+        transition: opacity 0.15s;
+        pointer-events: none;
+        white-space: nowrap;
+        font-family: Arial;
+      }
+
+      .upload:hover .tooltip,
+      .explore:hover .tooltip,
+      .notifications:hover .tooltip,
+      .youtube-apps:hover .tooltip,
+      .originals:hover .tooltip {
+        opacity: 1;
+      }
+
+      .start {
+        font-family: Arial;
+        font-size: 30px;
+      }
+
+      .lesson-one {
+        font-family: Arial;
+        font-size: 40px;
+        margin-left: 20px;
+        color: blueviolet;
+      }
+
+      .explain {
+        font-family: Arial;
+        font-size: 18px;
+        width: 700px;
+        align-items: center;
+      }
+
+      .result {
+        display: flex;
+        justify-content: center;
+      }
+
+      .sub-topic {
+        font-family: Arial;
+        font-size: 25px;
+        margin-left: 17px;
+      }
+
+      .sub-topics {
+        font-family: Arial;
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .sub-topies {
+        font-family: Arial;
+        font-size: 45px;
+        text-align: center;
+        align-self: flex-end;
+      }
+
+    </style>
+  </head>
+  <body style="height: 3000px;">
+
+    <div class="jr-header">
+      <div class="first-head">
+        <img class="four-lines" src="icons/3Lines.svg">
+        <p class="name">TECH VISION</p>
+      </div>
+      <div class="second-head">
+        <p class="visit">Visit &#62; https://@www.Jrtech.com</P>
+      </div>
+      <div class="third-head">
+        <div class="upload">
+          <img class="icons" src="icons/upload.svg">
+          <div class="tooltip">upload</div>
+        </div>
+        <div class="notifications">
+          <img class="icons"  src="icons/notifications.svg">
+          <div class="tooltip">notifications</div>
+        </div>
+        <div class="youtube-apps">
+          <img class="icons"  src="icons/youtube-apps.svg">
+          <div class="tooltip">Jr-apps</div>
+        </div>
+        <div class="explore">
+          <img class="icons"  src="icons/explore.svg">
+          <div class="tooltip">explore</div>
+        </div>
+        <div class="originals">
+          <img class="icons" src="icons/originals.svg">
+          <div class="tooltip">videos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="first-div">
+      <img src="">
+      <p class="jerry-name">
+        <img class="logo" src="icons/techlogo.jpeg">
+        <span class="wellcome">WellCome To </span>Jr.Tech
+      </p>
+    </div>
+
+      <p class="introduction">
+        In this COURSE you will learn more about the<span class="free-code">@freeCodeCamp</span>coding....!!!
+      </p>
+
+      <p class="start">Let Get Started &#10003;</p>
+
+      <P class="sub-topies">HTML (HyperText Mark Up language)</P>
+      <p class="sub-topics">A TOOL FOR CREATING WEBSITES</p>
+
+      <p class="lesson-one">LESSON 1:syntax(&#60; &#62; /)</p>
+      <p class="explain">Syntax are the <strong>RULES</strong> for writing codes. In the
+        coding language,if you don't follow the rules of syntax the computer won't understand the code.</p>
+
+    <p class="lesson-one">LESSON 2:Html Tag(&#60;button&#62; / &#60;p&#62;)</p>
+    <p class="explain">Html tag basically tells the computer what
+       we are about to create or trying to create. EXAMPLE  &#62;</p>
+
+    <div class="result">
+     <p class="explain">&#60;button&#62;Hello&#60;/button&#62;</p>
+     <p class="explain">RESULT:</p>
+
+     <button>Hello</button>
+    </div>
+
+    <p class="sub-topics">TYPES OF HTML TAGS</p>
+    &#60;button&#62;
+    &#60;p&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+    &#60;button&#62;
+
+
+    <p class="lesson-one">LESSON 3:Anchor Element(&#60;a&#62;&#60;/a&#62;)</p>
+    <p class="explain">Anchor element basically serve as a <strong>LINK</strong>
+       to another website or webpage.EXAMPLE&#62;</p>
+
+
+    <P class="explain">&#60;a&#62;&#60;/a&#62;</P>
+
+    <p class="lesson-one">LESSON 4:Html Attribute("https//www.JrTech.com/")</p>
+    <p class="explain">Html Attribute basically modifies how an element behaves.EXAMPLE&#62;</p>
+
+  <div class="result">
+   <P class="explain">&#60;a href="https//www.JrTech.com/"&#62;Link To Jrpages&#60;/a&#62;</P>
+   <p class="explain">RESULT:</p>
+   <a class="explain" href="https//www.JrTech.com/">
+     Link To Jrpages</a>
+  </div>
+
+  <li class="sub-topic">href(Attribute Name):It tells us what we are modifing.</li>
+  <li class="sub-topic">"https//www.JrTech.com/"(Attribute Value):It tells us what we are modifing it to.</li>
+
+   <p class="lesson-one">LESSON 5:Target Attribute(Target="blank")</p>
+   <p class="explain">Target Attribute basically modifies either the link opens in a new <strong>FILE</strong> or the current page.EXAMPLE&#62;</p>
+   <P class="explain">&#60;a href="https//www.JrTech.com/" target="blank"&#62;</P>
+
+   <P class="lesson-one">LESSON 6:Html Entity(Special Charaters)</P>
+   <p class="explain">Html Entity allow us take out special charaters.Which can be use to place sign on our webpage.EXAMPLE&#62;</p>
+   <P class="sub-topics">TYPES OF HTML ENTITYS</P>
+   <P class="explain">& # 6 2 ;    =    Greaterthan </P>
+   <P class="explain">& # 1 8 3 ;    =  Center dot </P>
+   <P class="explain">& # 6 0 ;    =    Lessthan </P>
+   <P class="explain">& # 1 0 0 0 3 ;    = Checkmark </P>
+   <P class="explain">& # 3 4 ;    = Double quatation mark </P>
+
+   <p class="sub-topies">CSS (STYLES)</p>
+   <p class="sub-topics">A TOOL FOR STYLING YOUR WEBSITES</p>
+</body>
+</html>

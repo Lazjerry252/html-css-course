@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .header {
+        background-color: rgb(247, 243, 243);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      .first-section {
+        display: flex;
+        align-items: center;
+        width: 400px;
+      }
+      .three-lines {
+        height: 35px;
+        margin-left: 8px;
+        margin-right: 25px;
+      }
+      .page-name {
+        font-size: 40px;
+        color: orange;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+      }
+      .page-name::first-letter {
+        font-size: 1.5em;
+        color: yellow;
+      }
+      .second-section{
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .text {
+        font-size: 25px;
+        color: black;
+      }
+      .sign-up {
+        height: 30px;
+        width: 90px;
+        background-color: green;
+        color: white;
+        border-radius: 8px;
+        border-color: green;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: -68px;
+      }
+      .login {
+        height: 30px;
+        width: 90px;
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+        border-color: gray;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+      .ALL-DIVS {
+       margin-top: 100px;
+      }
+
+      .first-div {
+        background-color: rgb(245, 238, 238);
+        display: inline-block;
+        box-shadow: 4px 4px 4px rgb(218, 209, 209);
+        width: 380px;
+        margin: 30px 20px;
+        border-radius: 20px;
+        border-color: solid;
+      }
+      .image {
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .small-div {
+        background-color: white;
+      }
+      .house-name {
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: 800;
+        margin-left: 5px;
+        margin-bottom: 13px;
+        color: rgb(182, 142, 219);
+      }
+      .amount {
+        font-size: 20px;
+        font-family: Arial;
+        font-weight: bold;
+        margin-top: 0;
+        color: orange;
+        margin-left: 5px;
+      }
+      .rate {
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .buy {
+        height: 40px;
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 8px;
+        border-color: blueviolet;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 93px;
+        margin-bottom: 7px;
+        box-shadow: 1px 1px 4px rgb(124, 119, 119);
+      }
+      .buy:hover, .buy1:hover, .buy2:hover {
+        background-color: white;
+        color: blueviolet;
+      }
+      .buy1 {
+        height: 40px;
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 8px;
+        border-color: blueviolet;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 93px;
+        margin-bottom: 7px;
+        box-shadow: 1px 1px 4px rgb(124, 119, 119);
+      }
+      .buy2 {
+        height: 40px;
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 8px;
+        border-color: blueviolet;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 93px;
+        margin-bottom: 7px;
+        box-shadow: 1px 1px 4px rgb(124, 119, 119);
+      }
+      .buy3 {
+        height: 40px;
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 8px;
+        border-color: blueviolet;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 93px;
+        margin-bottom: 7px;
+        box-shadow: 1px 1px 4px rgb(124, 119, 119);
+      }
+      .buy4 {
+        height: 40px;
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 8px;
+        border-color: blueviolet;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 93px;
+        margin-bottom: 7px;
+        box-shadow: 1px 1px 4px rgb(124, 119, 119);
+      }
+      .buy5 {
+        height: 40px;
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 8px;
+        border-color: blueviolet;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 93px;
+        margin-bottom: 7px;
+        box-shadow: 1px 1px 4px rgb(124, 119, 119);
+      }
+      .buy6 {
+        height: 40px;
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 8px;
+        border-color: blueviolet;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 92px;
+        margin-bottom: 7px;
+        box-shadow: 1px 1px 4px rgb(124, 119, 119);
+      }
+      .buy7 {
+        height: 40px;
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 8px;
+        border-color: blueviolet;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 93px;
+        margin-bottom: 7px;
+        box-shadow: 1px 1px 4px rgb(124, 119, 119);
+      }
+      .buy8 {
+        height: 40px;
+        width: 200px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 8px;
+        border-color: blueviolet;
+        border-style: solid;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 93px;
+        margin-bottom: 7px;
+        box-shadow: 1px 1px 4px rgb(124, 119, 119);
+      }
+    </style>
+  </head>
+  <body>
+   <div class="ALL-DIVS">
+
+    <div class="header">
+     <div class="first-section">
+      <img class="three-lines" src="icons/3Lines.svg">
+      <p class="page-name">Heavens Home</p>
+     </div>
+     <div class="second-section">
+      <p class="text">Service</p>
+      <p class="text">Learn more...</p>
+      <button class="sign-up">Sign up</button>
+      <button class="login">Login</button>
+     </div>
+    </div>
+
+
+    <div class="first-div">
+      <div><img class="image" src="thumbnails/house8.jfif"></div>
+      <div class="small-div">
+      <p class="house-name">Luxurious Duplex</p>
+      <p class="amount">$87,447.68 <span class="rate">USD</span></p>
+      <button class="buy">Purchase Now</button>
+      </div>
+    </div>
+
+
+    <div class="first-div">
+      <div><img class="image" src="thumbnails/house2.jfif"></div>
+      <div class="small-div">
+      <p class="house-name">Interior Duplex</p>
+      <p class="amount">$121,720.24 <span class="rate">USD</span></p>
+      <button class="buy1">Purchase Now</button>
+      </div>
+    </div>
+
+
+    <div class="first-div">
+      <div><img class="image" src="thumbnails/house3.jfif"></div>
+      <div class="small-div">
+      <p class="house-name">Wonderful Duplex</p>
+      <p class="amount">$107,297.11 <span class="rate">USD</span></p>
+      <button class="buy2">Purchase Now</button>
+      </div>
+    </div>
+
+
+    <div class="first-div">
+      <div><img class="image" src="thumbnails/house1.jfif"></div>
+      <div class="small-div">
+      <p class="house-name">Lovely Duplex</p>
+      <p class="amount">$145,547.90 <span class="rate">USD</span></p>
+      <button class="buy3">Purchase Now</button>
+      </div>
+    </div>
+
+
+    <div class="first-div">
+      <div><img class="image" src="thumbnails/house5.jfif"></div>
+      <div class="small-div">
+      <p class="house-name">Amazing Duplex</p>
+      <p class="amount">$200,010.27 <span class="rate">USD</span></p>
+      <button class="buy4">Purchase Now</button>
+      </div>
+    </div>
+
+
+    <div class="first-div">
+      <div><img class="image" src="thumbnails/house6.jfif"></div>
+      <div class="small-div">
+      <p class="house-name">Luxurious Duplex</p>
+      <p class="amount">$87,447.68 <span class="rate">USD</span></p>
+      <button class="buy5">Purchase Now</button>
+      </div>
+    </div>
+
+
+    <div class="first-div">
+      <div><img class="image" src="thumbnails/house7.jfif"></div>
+      <div class="small-div">
+      <p class="house-name">Almighty Duplex</p>
+      <p class="amount">$190,883.58 <span class="rate">USD</span></p>
+      <button class="buy6">Purchase Now</button>
+      </div>
+    </div>
+
+
+    <div class="first-div">
+      <div><img class="image" src="thumbnails/house4.jfif"></div>
+      <div class="small-div">
+      <p class="house-name">Graded Duplex</p>
+      <p class="amount">$139,909.01 <span class="rate">USD</span></p>
+      <button class="buy7">Purchase Now</button>
+      </div>
+    </div>
+
+
+    <div class="first-div">
+      <div><img class="image" src="thumbnails/house9.jfif"></div>
+      <div class="small-div">
+      <p class="house-name">Luxurious Duplex</p>
+      <p class="amount">$165,333.00 <span class="rate">USD</span></p>
+      <button class="buy8">Purchase Now</button>
+      </div>
+    </div>
+
+   </div>
+  </body>
+</html>

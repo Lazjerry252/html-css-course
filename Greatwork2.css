@@ -1,0 +1,209 @@
+.header {
+  height: 70px;
+  background-color: rgb(159, 129, 231);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.first {
+  display: flex;
+  align-items: center;
+}
+.lines {
+  height: 38px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.home {
+  font-family: Arial, monospace;
+  font-size: 35px;
+}
+.home::first-letter {
+  font-size: 1.5em;
+  color: green;
+}
+.second {
+  background-color: gray;
+}
+.third {
+
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.one {
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.two {
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.three {
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.four {
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.small-div:hover {
+  background-color: rgb(219, 205, 205);
+}
+
+.company-name {
+  margin-top: 150px;
+}
+.demo {
+  font-family: Arial;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  color: green;
+  margin-bottom: 20px;
+}
+.demos {
+  color: blueviolet;
+  font-size: 60px;
+  align-self: flex-end;
+}
+.motto {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.items {
+  height: 50px;
+  background-color: gold;
+  transform: skewX(24deg);
+  margin-left: 20px;
+  margin-right: 900px;
+}
+.item-one {
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 35px;
+  margin-left: 30px;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.ALL-DIVS {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.main-header {
+
+}
+.house {
+  font-size: 40px;
+  font-family: monospace;
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 0;
+}
+.usd {
+  font-size: 18px;
+  color: gray;
+}
+.header-price {
+  display: flex;
+  margin-bottom: 30px;
+}
+.small-price {
+  align-self: flex-end;
+  margin-left: 20px;
+}
+.buy {
+  height: 40px;
+  width: 110px;
+  background-color: white;
+  color: blueviolet;
+  border-radius: 8px;
+  border-color: blueviolet;
+  border-style: solid;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  box-shadow: 1px 1px 4px rgb(124, 119, 119);
+  transition: opacity 0.15s, background-color 0.15s, color 0.15s;
+}
+.buy:hover {
+  background-color: blueviolet;
+  color: white;
+}
+.buy:active {
+  opacity: 0.3;
+}
+
+.add {
+  height: 40px;
+  width: 110px;
+  background-color: white;
+  color: green;
+  border-radius: 8px;
+  border-color: green;
+  border-style: solid;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgb(124, 119, 119);
+  transition: opacity 0.15s, background-color 0.15s, color 0.15s;
+}
+.add:hover {
+  background-color: green;
+  color: white;
+}
+.add:active {
+  opacity: 0.3;
+}
+.features {
+  font-size: 20px;
+}
+.sub-features {
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: Arial;
+  font-weight: 600;
+}
+.learn {
+  font-family: Arial;
+  color: blue;
+}
